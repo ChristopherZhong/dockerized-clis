@@ -1,0 +1,11 @@
+#!/bin/bash
+
+docker run \
+	--env "BW_SESSION=${BW_SESSION}" \
+	--interactive \
+	--rm \
+	--tty \
+	--volume "${HOME}/.config/Bitwarden CLI:/root/.config/Bitwarden CLI" \
+	--volume "$(pwd):/bw" \
+	bitwarden-cli \
+	"$@"
