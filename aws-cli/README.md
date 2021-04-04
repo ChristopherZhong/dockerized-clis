@@ -1,19 +1,22 @@
 # aws-cli
 
+https://aws.amazon.com/cli/
+
+## Using aws-cli
+
+Run aws-cli using the following command.
+
 ```shell
 docker run \
 	--interactive \
 	--rm \
 	--tty \
 	--volume "${HOME}/.aws:/root/.aws" \
-	amazon/aws-cli \
-	"$@"
+	amazon/aws-cli <command>
 ```
 
-Or
+Or use the [aws](./aws) script.
 
-[aws](./aws)
-
-```
-aws
+```shell
+aws <command>
 ```
