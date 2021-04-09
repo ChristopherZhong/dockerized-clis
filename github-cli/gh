@@ -1,8 +1,10 @@
 #!/bin/bash
 
-docker run \
-	--interactive \
-	--rm \
-	--tty \
+docker \
+	--context default \
+	run \
+    --interactive \
+    --rm \
+    --tty \
 	github-cli \
 	"$@"
