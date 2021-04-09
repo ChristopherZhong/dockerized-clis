@@ -1,9 +1,11 @@
 #!/bin/bash
 
-docker run \
-	--interactive \
-	--rm \
-	--tty \
-	--volume "$(pwd):/data" \
+docker \
+	--context default \
+	run \
+    --interactive \
+    --rm \
+    --tty \
+    --volume "$(pwd):/data" \
 	minlag/mermaid-cli \
 	"$@"
