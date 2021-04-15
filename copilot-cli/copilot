@@ -1,0 +1,11 @@
+#!/bin/bash
+
+docker \
+	--context default \
+	run \
+		--interactive \
+		--rm \
+		--tty \
+		--volume "${HOME}/.aws:/root/.aws" \
+	copilot-cli \
+	"$@"
