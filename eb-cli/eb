@@ -1,0 +1,12 @@
+#!/bin/bash
+
+docker \
+  --context default \
+  run \
+    --interactive \
+    --rm \
+    --tty \
+    --volume "${HOME}/.aws:/root/.aws" \
+    --volume "${PWD}:/eb" \
+	eb-cli \
+	"$@"
