@@ -8,7 +8,7 @@ Run eb-cli using the following command.
 
 ```shell
 docker \
-  --context default
+  --context default \
   run \
     --interactive \
     --rm \
