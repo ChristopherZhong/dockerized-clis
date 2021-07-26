@@ -1,0 +1,20 @@
+= AWS Command Line Interface (CLI)
+
+https://aws.amazon.com/cli/
+
+== Using the AWS CLI
+
+Run the AWS CLI with the following command.
+
+[source,bash]
+----
+include::aws[lines=3..11]
+	<command>
+----
+
+Or use the link:aws[] script.
+
+[source,shell]
+----
+aws <command>
+----
