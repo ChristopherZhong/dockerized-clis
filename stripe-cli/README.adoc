@@ -1,0 +1,21 @@
+= Stripe Command Line Interface (CLI)
+
+https://github.com/stripe/stripe-cli
+
+== Using the Stripe CLI
+
+Run the Stripe CLI with the following command.
+
+.Bash
+[source,bash]
+----
+include::stripe[lines=3..9]
+	<command>
+----
+
+Or use the link:stripe[] script.
+
+[source,shell]
+----
+stripe <command>
+----
