@@ -1,0 +1,12 @@
+#!/bin/bash
+
+docker \
+	--context default \
+	run \
+		--interactive \
+		--rm \
+		--tty \
+		--volume "${PWD}:/node" \
+		--workdir /node \
+	node \
+	node "$@"

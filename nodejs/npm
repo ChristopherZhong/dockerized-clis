@@ -1,0 +1,12 @@
+#!/bin/bash
+
+docker \
+	--context default \
+	run \
+		--interactive \
+		--rm \
+		--tty \
+		--volume "${PWD}:/npm" \
+		--workdir /npm \
+	node \
+	npm "$@"

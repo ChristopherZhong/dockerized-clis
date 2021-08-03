@@ -1,0 +1,39 @@
+= Node.js
+
+https://nodejs.org/
+
+== Using Node
+
+Run Node with the following command.
+
+.Bash
+[source,bash]
+----
+include::node[lines=3..11]
+	node <command>
+----
+
+Or use the link:node[] script.
+
+[source,shell]
+----
+node <command>
+----
+
+== Using npm
+
+Run npm with the following command.
+
+.Bash
+[source,bash]
+----
+include::npm[lines=3..11]
+	npm <command>
+----
+
+Or use the link:npm[] script.
+
+[source,shell]
+----
+npm <command>
+----
