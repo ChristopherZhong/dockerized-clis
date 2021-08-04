@@ -6,5 +6,8 @@ docker \
         --interactive \
         --rm \
         --tty \
+        --volume "${HOME}/.config/stripe:/root/.config/stripe" \
+        --volume "${PWD}:/stripe" \
+        --workdir /stripe \
     stripe/stripe-cli
 	"$@"
