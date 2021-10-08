@@ -1,0 +1,21 @@
+= Gradle
+
+https://gradle.org/
+
+== Using Gradle
+
+Run Gradle with the following command.
+
+.Bash
+[source,bash]
+----
+include::gradle[lines=2..12]
+	<command>
+----
+
+Or use the link:gradle[] script.
+
+[source,shell]
+----
+gradle <command>
+----

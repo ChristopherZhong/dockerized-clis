@@ -1,0 +1,13 @@
+#!/usr/local/env bash
+docker \
+	--context default \
+	run \
+        --entrypoint gradle \
+		--interactive \
+		--rm \
+		--tty \
+        --user gradle \
+		--volume "${PWD}:/home/gradle/project" \
+		--workdir /home/gradle/project \
+	gradle \
+	"$@"
