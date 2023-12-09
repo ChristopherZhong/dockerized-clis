@@ -6,13 +6,22 @@ https://aws.amazon.com/cli/
 
 Run the AWS CLI with the following command.
 
+.Bash
 [source,bash]
 ----
 include::aws[lines=3..11]
 	<command>
 ----
 
-Or use the link:aws[] script.
+.CMD
+[source,cmd]
+----
+include::aws.cmd[lines=3..11]
+	<command>
+----
+
+
+Or use the link:aws[] or link:aws.cmd[] script.
 
 [source,shell]
 ----
