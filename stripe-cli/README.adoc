@@ -9,11 +9,18 @@ Run the Stripe CLI with the following command.
 .Bash
 [source,bash]
 ----
-include::stripe[lines=3..9]
+include::stripe[lines=3..12]
 	<command>
 ----
 
-Or use the link:stripe[] script.
+.CMD
+[source,cmd]
+----
+include::stripe.cmd[lines=3..12]
+	<command>
+----
+
+Or use the link:stripe[] or link:stripe.cmd[] script.
 
 [source,shell]
 ----
